@@ -59,3 +59,65 @@ Após instalar as dependências, execute o seguinte comando para iniciar o servi
 - `yarn dev` é a alternativa para quem usa `yarn`.  
 
 ---
+
+## Usando Styled-Components no Projeto
+
+## 📦 Instalação
+
+### O styled-components é uma biblioteca que permite estilizar componentes React utilizando CSS-in-JS. 
+
+```bash
+npm install styled-components
+
+Como Utilizar o styled-components
+O styled-components permite criar componentes com estilos CSS embutidos diretamente no JavaScript/TypeScript.
+
+Aqui está um exemplo simples de uso:
+
+import styled from "styled-components";
+
+// Criando um componente Title estilizado
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: #bf4f74;
+`;
+
+// Criando outro componente Wrapper estilizado
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
+
+// Usando os componentes estilizados no React
+function App() {
+  return (
+    <Wrapper>
+      <Title>Hello World!</Title>
+    </Wrapper>
+  );
+}
+
+export default App;
+
+```
+
+### Para melhorar a experiência de desenvolvimento com o styled-components, é recomendado instalar o Babel Plugin, que oferece:
+
+#### 1. Nomes de classes legíveis no navegador.
+#### 2. Compatibilidade com SSR (Server-Side Rendering).
+#### 3 .Tamanhos de pacotes menores.
+
+```
+Instalação do Babel Plugin:
+
+npm install --save-dev babel-plugin-styled-components
+
+Adicione a configuração no arquivo babel.config.js:
+
+module.exports = {
+  presets: ["@babel/preset-env", "@babel/preset-react"],
+  plugins: ["babel-plugin-styled-components"]
+};
+
+```

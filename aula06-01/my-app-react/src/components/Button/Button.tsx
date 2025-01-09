@@ -1,4 +1,4 @@
-import "./Button.css";
+import { ButtonStyled } from "./ButtonStyled";
 
 interface ButtonProps {
   texto: string;
@@ -7,8 +7,8 @@ interface ButtonProps {
 
 function Button(parametro: ButtonProps) {
   return (
-    <div className="container-btn">
-      <button
+      <ButtonStyled>
+        <button
         className="my-btn"
         onClick={
           parametro.funcaoDeClique
@@ -18,9 +18,12 @@ function Button(parametro: ButtonProps) {
               }
         }
       >
+        <span>
+        🚀
+        </span>
         {parametro.texto}
-      </button>
-    </div>
+        </button>
+      </ButtonStyled>
   );
 }
 

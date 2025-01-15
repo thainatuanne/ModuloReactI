@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const AboutStyled = styled.section`
     display: flex;
@@ -20,4 +20,4 @@ export const AboutStyled = styled.section`
             margin: 8px 0 24px 0;
         }
     }
-`;
+`

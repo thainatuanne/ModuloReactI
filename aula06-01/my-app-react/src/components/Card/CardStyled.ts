@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-export  const CardStyled = styled.div`
+export const CardStyled = styled.div`
     border: 1px solid black;
     border-radius: 12px;
     background-color: rgba(79, 224, 224, 0.737);
@@ -14,5 +14,4 @@ export  const CardStyled = styled.div`
     h3 {
         color: black;
     }
-`;
-
+`

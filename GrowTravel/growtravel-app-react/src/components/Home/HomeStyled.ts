@@ -1,10 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const HomeStyled = styled.section`
     flex-direction: row-reverse;
     gap: 24px;
     text-align: center;
-
 
     display: flex;
     align-items: center;
@@ -22,4 +21,4 @@ export const HomeStyled = styled.section`
             margin: 8px 0 24px 0;
         }
     }
-`;
+`

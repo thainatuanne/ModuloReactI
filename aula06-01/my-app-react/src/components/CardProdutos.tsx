@@ -1,10 +1,7 @@
-
-
 interface CardProdutoPops {
-    titulo: string,
-    descricao: string,
-    preco: number,
-
+    titulo: string
+    descricao: string
+    preco: number
 }
 
 function CardProduto(props: CardProdutoPops) {
@@ -12,10 +9,12 @@ function CardProduto(props: CardProdutoPops) {
         <div className="container-card">
             <h2>{props.titulo}</h2>
             <p>{props.descricao}</p>
-            <p>{props.preco.toLocaleString('pt-BR', {
-                style: 'currency',
-                currency: 'BRL'
-            })}</p>
+            <p>
+                {props.preco.toLocaleString('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL',
+                })}
+            </p>
         </div>
     )
 }

@@ -18,6 +18,6 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     a:hover {
-        text-decoration: dotted;
+        text-decoration: underline;
     } 
 `;

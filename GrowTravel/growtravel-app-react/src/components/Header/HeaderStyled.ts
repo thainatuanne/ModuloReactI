@@ -6,6 +6,9 @@ export const HeaderStyled = styled.header`
 
     & > nav {
         ul {
+            display: flex;
+            gap: 48px;
+
             li {
                 list-style-type: none;
                 margin: 12px 0;

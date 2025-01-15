@@ -6,7 +6,7 @@ export const AboutStyled = styled.section`
     align-items: left;
     gap: 24px;
     padding: 48px 24px;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid #cccccc;
 
     & > img {
         width: 40%;

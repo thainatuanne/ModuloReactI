@@ -2,11 +2,20 @@ import { GlobalStyles } from "./configs/GlobalStyles";
 import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./configs/themes/light-theme";
 import { HeaderStyled } from "./components/Header/HeaderStyled";
+import { HomeStyled } from "./components/Home/HomeStyled";
 import { ButtonStyled } from "./components/Button/ButtonStyled";
-import { SectionStyled } from "./components/Section/SectionStyled";
-import imgHome from "./assets/home.svg";
 
+import imgHome from "./assets/home.svg";
 import imgQuemSomos from "./assets/aeroporto.svg";
+import imgSocial from "./assets/social.png";
+
+import { AboutStyled } from "./components/About/AboutStyled";
+import { SectionStyled } from "./components/Section/SectionStyled";
+import { TableStyled } from "./components/Table/TableStyled";
+import { FloatButtonStyled } from "./components/FloatButton/FloatButton";
+import { FooterStyled } from "./components/Footer/FooterStyled";
+
+
 
 export function App() {
   return (
@@ -21,7 +30,7 @@ export function App() {
             </li>
             <li>
               <a href="#">Serviços</a>
-              </li>
+            </li>
             <li>
               <a href="#">Planos</a>
             </li>
@@ -33,18 +42,18 @@ export function App() {
       </HeaderStyled>
 
       <main>
-        <SectionStyled $reverse $gap={24} $textAlign="center">
-          <img src={imgHome} alt="" />
+        <HomeStyled>
+          <img src={imgHome} alt="Buscar viagens pelo mundo" />
 
           <div>
             <h2>GrowTravel</h2>
             <p>O melhor serviço para você!</p>
             <ButtonStyled $primary> Saiba Mais!</ButtonStyled>
           </div>
-        </SectionStyled>
+        </HomeStyled>
 
-        <SectionStyled $reverse $gap={48} $textAlign="left" $maxContainerWidth={50}>
-          <img src={imgQuemSomos} alt="" />
+        <AboutStyled>
+          <img src={imgQuemSomos} alt="Aeroporto" />
 
           <div>
             <h2>Quem Somos</h2>
@@ -64,13 +73,82 @@ export function App() {
               viagem.
             </p>
           </div>
+        </AboutStyled>
+
+        <SectionStyled $reverse $gap={24} $textAlign="center">
+          <div>
+            <h2>Planos</h2>
+
+            <TableStyled>
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Plano 1</th>
+                  <th>Plano 2</th>
+                  <th>Plano 3</th>
+                </tr>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <th>Suporte 24h</th>
+                  <td className="success">✅</td>
+                  <td className="success">✅</td>
+                  <td className="success">✅</td>
+                </tr>
+
+                <tr>
+                  <th>Serviços de quarto</th>
+                  <td className="success">✅</td>
+                  <td className="success">✅</td>
+                  <td className="success">✅</td>
+                </tr>
+
+                <tr>
+                  <th>Guia turístico</th>
+                  <td className="success">✅</td>
+                  <td className="success">✅</td>
+                  <td className="success">✅</td>
+                </tr>
+
+                <tr>
+                  <th>Roteiro de trilhas</th>
+                  <td className="error">❌</td>
+                  <td className="success">✅</td>
+                  <td className="success">✅</td>
+                </tr>
+
+                <tr>
+                  <th>Serviço personalizado</th>
+                  <td className="error">❌</td>
+                  <td className="success">✅</td>
+                  <td className="success">✅</td>
+                </tr>
+
+                <tr>
+                  <th>Área VIP</th>
+                  <td className="error">❌</td>
+                  <td className="error">❌</td>
+                  <td className="success">✅</td>
+                </tr>
+              </tbody>
+            </TableStyled>
+          </div>
         </SectionStyled>
       </main>
 
-      <footer>
+      <FloatButtonStyled>
+        <img src={imgSocial} alt="Watsapp" />
 
-      </footer>
+      </FloatButtonStyled>
 
+      <FooterStyled>
+
+        <div>
+          <p>&copy; Copyright 2024.</p>
+        </div>
+      </FooterStyled>
     </ThemeProvider>
   );
 }

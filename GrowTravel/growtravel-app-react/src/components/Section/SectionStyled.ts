@@ -26,7 +26,7 @@ export const SectionStyled = styled.section<SectionStyledProps>`
     ${(props) =>
       props.$maxContainerWidth &&
       css`
-        width: ${props.$maxContainerWidth + "%"};
+        width: ${props.$maxContainerWidth}px;
       `};
 
     h2 {

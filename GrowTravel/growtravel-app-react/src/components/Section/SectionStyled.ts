@@ -8,7 +8,7 @@ interface SectionStyledProps {
 }
 
 export const SectionStyled = styled.section<SectionStyledProps>`
-    flex-direction: ${(props) => (props.$reverse ? "row-reverse" : "row")};
+    flex-direction: ${(props) => (props.$reverse ? 'row-reverse' : 'row')};
     gap: ${(props) => `${props.$gap}px`};
     text-align: ${(props) => props.$textAlign};
 

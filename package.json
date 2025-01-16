@@ -1,5 +1,15 @@
 {
     "devDependencies": {
-        "prettier": "3.4.2"
-    }
+        "prettier": "^3.4.2"
+    },
+    "name": "moduloreacti",
+    "version": "1.0.0",
+    "description": "Este repositório contém exercícios de fixação do **Módulo React I**, com o objetivo de reforçar conceitos fundamentais do React, como componentes, props, estados e roteamento.  \r Os exercícios são voltados para reforçar o aprendizado através da prática.",
+    "main": "index.js",
+    "scripts": {
+        "format": "prettier --write ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
 }

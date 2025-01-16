@@ -143,28 +143,28 @@ Prettier é uma ferramenta de formatação de código para manter um estilo cons
 
 1. **Instale o Prettier como dependência de desenvolvimento**:
 
-   ```bash
-   npm install --save-dev --save-exact prettier
-   ```
+    ```bash
+    npm install --save-dev --save-exact prettier
+    ```
 
 2. **Crie um arquivo de configuração `.prettierrc` na raiz do projeto** com as seguintes configurações:
 
-   exemplo:
-   
-   ```json
-   {
-       "printWidth": 100,
-       "singleQuote": true,
-       "tabWidth": 4,
-       "semi": false
-   }
-   ```
+    exemplo:
 
-4. **Formate os arquivos do projeto com o comando**:
+    ```json
+    {
+        "printWidth": 100,
+        "singleQuote": true,
+        "tabWidth": 4,
+        "semi": false
+    }
+    ```
 
-   ```bash
-   npx prettier . --write
-   ```
+3. **Formate os arquivos do projeto com o comando**:
+
+    ```bash
+    npx prettier . --write
+    ```
 
 ---
 
@@ -172,17 +172,17 @@ Prettier é uma ferramenta de formatação de código para manter um estilo cons
 
 1. Adicione um script no arquivo `package.json` para facilitar a execução do Prettier:
 
-   ```json
-   "scripts": {
-       "format": "prettier --write ."
-   }
-   ```
+    ```json
+    "scripts": {
+        "format": "prettier --write ."
+    }
+    ```
 
 2. Agora, você pode formatar os arquivos do projeto com:
 
-   ```bash
-   npm run format
-   ```
+    ```bash
+    npm run format
+    ```
 
 ---
 
@@ -204,14 +204,14 @@ dist/
 
 2. Configure o VS Code para usar o Prettier automaticamente ao salvar os arquivos:
 
-   - Abra o `settings.json` (Configurações do VS Code) e adicione:
+    - Abra o `settings.json` (Configurações do VS Code) e adicione:
 
-     ```json
-     {
-         "editor.defaultFormatter": "esbenp.prettier-vscode",
-         "editor.formatOnSave": true
-     }
-     ```
+        ```json
+        {
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+            "editor.formatOnSave": true
+        }
+        ```
 
 3. Agora, toda vez que salvar um arquivo, ele será automaticamente formatado pelo Prettier.
 

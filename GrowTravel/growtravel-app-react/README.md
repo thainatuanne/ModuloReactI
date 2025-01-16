@@ -11,12 +11,15 @@ GrowTravel é uma aplicação desenvolvida em React para gerenciamento de viagen
 ## Imagens do Projeto
 
 ### Página Inicial
+
 ![Página Inicial](./src/assets/image1.png)
 
 ### Tela de Planos
+
 ![Tela de Planos](./src/assets/image2.png)
 
 ### Direitos Reservados
+
 ![Direitos Reservados](./src/assets/image3.png)
 
 ## Tecnologias Utilizadas
@@ -29,24 +32,27 @@ GrowTravel é uma aplicação desenvolvida em React para gerenciamento de viagen
 ## Como Rodar o Projeto
 
 1. Clone este repositório:
-   ```bash
-   git clone https://github.com/thainatuanne/ModuloReact1.git
-   ```
+
+    ```bash
+    git clone https://github.com/thainatuanne/ModuloReact1.git
+    ```
 
 2. Navegue até a pasta do projeto:
-   ```bash
-   cd GrowTravel/growtravel-app-react
-   ```
+
+    ```bash
+    cd GrowTravel/growtravel-app-react
+    ```
 
 3. Instale as dependências:
-   ```bash
-   npm install
-   ```
+
+    ```bash
+    npm install
+    ```
 
 4. Rode o projeto:
-   ```bash
-   npm run dev
-   ```
+    ```bash
+    npm run dev
+    ```
 
 ## Prettier
 

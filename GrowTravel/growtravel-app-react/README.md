@@ -1,50 +1,53 @@
-# React + TypeScript + Vite
+# GrowTravel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GrowTravel é uma aplicação desenvolvida em React para gerenciamento de viagens e escolha de planos turísticos, oferecendo uma experiência de navegação intuitiva e personalizada.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Planos personalizados**: Escolha entre diversos planos de viagem.
+- **Navegação intuitiva**: Interface amigável e fácil de usar.
+- **Suporte 24h**: Atendimento disponível para solucionar dúvidas.
 
-## Expanding the ESLint configuration
+## Imagens do Projeto
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Página Inicial
+![Página Inicial](./src/assets/image1.png)
 
-- Configure the top-level `parserOptions` property like this:
+### Tela de Planos
+![Tela de Planos](./src/assets/image2.png)
 
-```js
-export default tseslint.config({
-    languageOptions: {
-        // other options...
-        parserOptions: {
-            project: ['./tsconfig.node.json', './tsconfig.app.json'],
-            tsconfigRootDir: import.meta.dirname,
-        },
-    },
-})
-```
+### Direitos Reservados
+![Direitos Reservados](./src/assets/image3.png)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Tecnologias Utilizadas
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **React.js**: Biblioteca JavaScript para construção de interfaces.
+- **Styled-Components**: Estilização dinâmica com CSS-in-JS.
+- **Vite**: Ferramenta para desenvolvimento rápido de front-end.
+- **Prettier**: Formatação automática de código.
 
-export default tseslint.config({
-    // Set the react version
-    settings: { react: { version: '18.3' } },
-    plugins: {
-        // Add the react plugin
-        react,
-    },
-    rules: {
-        // other rules...
-        // Enable its recommended rules
-        ...react.configs.recommended.rules,
-        ...react.configs['jsx-runtime'].rules,
-    },
-})
-```
+## Como Rodar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/thainatuanne/ModuloReact1.git
+   ```
+
+2. Navegue até a pasta do projeto:
+   ```bash
+   cd GrowTravel/growtravel-app-react
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Rode o projeto:
+   ```bash
+   npm run dev
+   ```
+
+## Prettier
+
+Para manter a consistência no código, o projeto utiliza o **Prettier**.

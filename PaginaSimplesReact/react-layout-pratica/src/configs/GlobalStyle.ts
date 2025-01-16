@@ -2,9 +2,8 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
     * {
-        margin: 0;
-        padding: 0;
         box-sizing: border-box;
+        font-family: 'Open Sans', sans-serif;
     }
 
     body {
@@ -13,11 +12,6 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${(props) => props.theme.backgroundColor};
         color: ${(props) => props.theme.textColor};
         padding: ${(props) => props.theme.paddingDefault}px;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
     }
 
     a {
@@ -30,4 +24,4 @@ export const GlobalStyle = createGlobalStyle`
         color: ${(props) => props.theme.linkHoverColor};
         text-decoration: underline;
     }
-`
+`;

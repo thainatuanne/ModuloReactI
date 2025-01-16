@@ -2,16 +2,16 @@ import styled from 'styled-components';
 
 export const HeaderStyled = styled.header`
     position: relative;
-    width: 100%; /* Garante que o header ocupe 100% da largura */
-    height: 300px;
+    width: 100%;
+    height: 500px;
 
     img {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%; /* A imagem ocupa 100% da largura do header */
-        height: 100%; /* A imagem ocupa 100% da altura do header */
-        object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         z-index: -1; 
         opacity: 0.5;
     }
@@ -26,8 +26,9 @@ export const HeaderStyled = styled.header`
     }
 
     h1 {
-        font-size: 2rem;
-        margin: 0;
-        color: ${(props) => props.theme.textColor};
+        font-size: 2.5rem;
+        color: ${(props) => props.theme.colorPrimary};
+        -webkit-background-clip: text;
+        background-clip: text;
     }
 `;

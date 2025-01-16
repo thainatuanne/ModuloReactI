@@ -1,7 +1,7 @@
 import { DefaultTheme } from 'styled-components'
 
 const lightTheme: DefaultTheme = {
-    colorPrimary: '#1e90ff', // cor principal
+    colorPrimary: '#0000FF', // cor principal
     backgroundColor: '#f7f9f9', // cor de fundo
     textColor: '#333333', // cor padrão do texto
     paddingDefault: 16, // espaçamento padrão

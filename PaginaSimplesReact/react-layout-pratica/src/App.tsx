@@ -2,7 +2,7 @@ import { ThemeProvider } from 'styled-components'
 import { lightTheme } from './configs/themes/lightThemes'
 import { GlobalStyle } from './configs/GlobalStyle'
 
-import headerImg from './assets/headerReact.png' 
+import headerImg from './assets/header.png' 
 import { HeaderStyled } from './components/Header/HeaderStyled'
 
 function App() {

@@ -17,13 +17,12 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     a {
-        color: ${(props) => props.theme.linkColor};
+        color: ${(props) => props.theme.colorPrimary};
         text-decoration: none;
-        border-radius: ${(props) => props.theme.borderRadius};
     }
 
     a:hover {
-        color: ${(props) => props.theme.linkHoverColor};
+        color: ${(props) => props.theme.highlightColor};
         text-decoration: underline;
     }
-`;
+`

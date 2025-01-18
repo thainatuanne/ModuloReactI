@@ -9,7 +9,5 @@ declare module 'styled-components' {
         borderRadius: string // Bordas arredondadas
         secondaryBackgroundColor: string // Cor de fundo secundária
         highlightColor: string // Cor de destaque para elementos
-        linkColor: string // Cor dos links
-        linkHoverColor: string // Cor dos links ao passar o mouse
     }
 }

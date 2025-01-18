@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const HeaderStyled = styled.header`
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 400px;
 
     img {
         position: absolute;
@@ -12,7 +12,7 @@ export const HeaderStyled = styled.header`
         width: 100%;
         height: 100%;
         object-fit: cover;
-        z-index: -1; 
+        z-index: -1;
         opacity: 0.5;
     }
 
@@ -23,12 +23,12 @@ export const HeaderStyled = styled.header`
         transform: translate(-50%, -50%);
         text-align: center;
         padding: ${(props) => props.theme.paddingDefault}px;
-    }
 
-    h1 {
-        font-size: 2.5rem;
-        color: ${(props) => props.theme.colorPrimary};
-        -webkit-background-clip: text;
-        background-clip: text;
+        h1 {
+            font-size: 2.5rem;
+            color: ${(props) => props.theme.colorPrimary};
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
     }
-`;
+`

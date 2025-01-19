@@ -1,50 +1,45 @@
-# React + TypeScript + Vite
+# 🖥️ Site Desenvolvimento Livre
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O **Site Desenvolvimento Livre** é um site fictício que apresenta um espaço colaborativo, criativo e acolhedor, chamado **Flow CasaCoffeColab**. Ele foi desenvolvido com o objetivo de praticar habilidades de React, estilização com Styled Components, e roteamento com React Router DOM.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Principais Funcionalidades**
 
-## Expanding the ESLint configuration
+- 🚀 Navegação fluida entre páginas utilizando **React Router DOM**.
+- 📱 **Design responsivo** com Styled Components.
+- ♻️ **Reutilização de componentes** para otimização do código.
+- 🎨 Suporte a temas customizáveis utilizando **DefaultTheme**.
+- ✨ Animações e efeitos visuais aplicados com CSS.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## **🚀 Tecnologias Utilizadas**
 
-```js
-export default tseslint.config({
-    languageOptions: {
-        // other options...
-        parserOptions: {
-            project: ['./tsconfig.node.json', './tsconfig.app.json'],
-            tsconfigRootDir: import.meta.dirname,
-        },
-    },
-})
-```
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **React**: Biblioteca JavaScript para criação de interfaces de usuário.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
+- **Styled Components**: Biblioteca para estilização com suporte a temas.
+- **React Router DOM**: Biblioteca para roteamento no React.
+- **Google Fonts**: Integração de fontes customizadas.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-    // Set the react version
-    settings: { react: { version: '18.3' } },
-    plugins: {
-        // Add the react plugin
-        react,
-    },
-    rules: {
-        // other rules...
-        // Enable its recommended rules
-        ...react.configs.recommended.rules,
-        ...react.configs['jsx-runtime'].rules,
-    },
-})
-```
+## **🌟 Funcionalidades**
+
+### **1. Páginas**
+O site possui três páginas principais:
+- 🏠 **Home**: Página inicial que apresenta a Flow CasaCoffeColab e seu conceito.
+- 📝 **Sobre (About)**: Página que detalha o espaço colaborativo e serviços oferecidos.
+- 📧 **Contato (Contact)**: Página com um formulário para envio de mensagens.
+
+### **2. Navegação**
+- **Navbar**: Um menu de navegação responsivo que permite acessar as páginas sem recarregar o site.
+
+### **3. Design**
+- Tema claro configurado em **DefaultTheme**.
+- Fontes customizadas utilizando **Google Fonts**, como "Playwrite VN".
+- Estilização global gerenciada em **GlobalStyles**.
+
+---

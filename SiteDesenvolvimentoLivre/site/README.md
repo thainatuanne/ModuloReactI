@@ -43,3 +43,21 @@ O site possui três páginas principais:
 - Estilização global gerenciada em **GlobalStyles**.
 
 ---
+## **📸 Imagens do Projeto**
+
+### **Home**
+A página inicial apresenta o espaço colaborativo Flow CasaCoffeColab:
+
+![Home Page](./src/assets/home.png)
+
+### **Sobre**
+A página "Sobre" detalha o espaço colaborativo, seus valores e serviços oferecidos:
+
+![About Page](./src/assets/about.png)
+
+### **Contato**
+A página "Contato" contém um formulário para que os usuários possam entrar em contato conosco:
+
+![Contact Page](./src/assets/contact.png)
+
+---

@@ -1,12 +1,12 @@
 import { DefaultTheme } from 'styled-components/dist/types'
 
 const theme: DefaultTheme = {
-    primary: '#4CAF50',
-    secondary: '#FF5722',
-    accent: '#FFC107',
-    background: '#F9F9F9',
+    primary: '#FFDDE1',
+    secondary: '#FFB8DE',
+    accent: '#C08497',
+    background: '#F4F4ED',
     text: '#333333',
-    info: '#17a2b8',
+    info: '#59344F',
     padding: 16,
 
     fontSizes: {

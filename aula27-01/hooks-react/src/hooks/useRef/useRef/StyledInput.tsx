@@ -12,3 +12,6 @@ const StyledInput = forwardRef<HTMLInputElement, StyledInputProps>(
 );
 
 export default StyledInput;
+
+// forwardRef permite que StyledInput receba uma referência do componente pai.
+//  O <input> recebe ref={ref}, permitindo que ele seja acessado pelo pai.

@@ -33,3 +33,7 @@ function App() {
 }
 
 export default App;
+
+// useRef cria uma referência no componente pai.
+// ref = { inputRef } passa essa referência para StyledInput.
+// focarInput chama focus() no < input > dentro do filho.

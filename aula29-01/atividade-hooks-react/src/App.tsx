@@ -1,11 +1,11 @@
+import { AppRoutes } from "./configs/AppRoutes";
+import { GlobalStyles } from "./configs/GlobalStyles";
 
-function App() {
-
+export function App() {
   return (
     <>
-
+      <GlobalStyles />
+      <AppRoutes />
     </>
-  )
+  );
 }
-
-export default App
